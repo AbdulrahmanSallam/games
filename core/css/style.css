@@ -1,0 +1,181 @@
+/***** theme customize *****/
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+.badge-color {
+  background-color: #32383e;
+}
+
+.second-color {
+  background-color: #3a497b;
+}
+
+.btn {
+  border: 2px solid #3a497b;
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  background-color: #3a497b;
+}
+.btn:focus {
+  border: 2px solid #3a497b !important;
+}
+
+/***** End theme customize *****/
+/***** Global *****/
+body {
+  font-family: "Comfortaa", cursive;
+  min-height: 100%;
+  background-color: #272b30;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive;
+  color: #fff !important;
+}
+
+a,
+p,
+span {
+  color: #fff !important;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #32383e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #272b30;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+/***** End Global *****/
+/***** Home *****/
+.home .card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+}
+.home .card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+.home header img {
+  max-height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home nav {
+  background-color: #3a497b !important;
+  margin-inline: auto;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.home .goTop {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  background-color: #3a497b;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/***** End Home *****/
+/***** Details *****/
+.details {
+  background-color: rgba(39, 39, 41, 0.7450980392);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  min-height: 100vh;
+}
+
+/***** End Details *****/
+/*****  Loader *****/
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(39, 43, 48, 0.8901960784);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading .spinner {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading .spinner::before, .loading .spinner::after {
+  border: 6.7px solid white;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  display: block;
+}
+.loading .spinner::before {
+  width: 33.6px;
+  height: 33.6px;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  animation: spinner-1o3y8q 0.75s infinite linear reverse;
+}
+.loading .spinner::after {
+  animation: spinner-1o3y8q 0.5s infinite linear;
+  height: 56px;
+  width: 56px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+@keyframes spinner-1o3y8q {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/***** End Loader *****/
+/***** Media *****/
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  html {
+    font-size: 13px;
+  }
+}
+/***** End Media *****//*# sourceMappingURL=style.css.map */
